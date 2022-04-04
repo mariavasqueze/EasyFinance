@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Finance</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="rel" href="/resources/favicon1.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/index.html"><img src="/resources/Logo.svg" alt="Easy finance logo" id="logo"></a>
+            <a href="/about.html" class="link">About</a>
+            <a href="/assetList.html" class="link">Asset List</a>
+            <a href="/calculator.html" class="link">Calculator</a>
+            <a href="/blog.html" class="link">Blog</a>
+            <button class="lightBlueButton">Contact Us</button>
+        </nav>
+        <div class="flexContainer" id="heroSection">
+            <div class="leftBox">
+                <h1>Find the best long-term stock investments</h1>
+                <p class="description">Discover the best and more secure ETFs and Index Funds for long term investment.</p>
+                <button class="lightBlueButton">Get Started</button>
+            </div>
+            <div class="rightBox">
+                <img src="/resources/hero image.png" alt="Computer stock graphs" id="heroImage">
+            </div>
+        </div>
+    </header>
+        <div class="flexContainer" id="showYou">
+            <div class="leftBox">
+                <img src="/resources/manPhone.png" alt="person checing stocks on phone" id="checkingPhone">
+            </div>
+            <div class="rightBox">
+                <h2>We want to show you</h2>
+                <img src="/resources/top3.png" alt="top 3 descriptions" id="top3">
+            </div>
+        </div>
+        <div class="flexContainer" id="allocation">
+            <div class="leftBox" id="chart">
+                <img src="/resources/mientrasTanto.png" alt="percentagesChart" id="percentagesChart">
+            </div>
+            <div class="rightBox">
+                <h2>Recommended allocation of assets:</h2>
+                <p  class="description" id="pWhiteBack">Investors recommend to invest a percentage in different types of ETFs and Index fund based on the type of companies they are composed of to minimize risk and increase resturns</p>
+                <button class="lightBlueButton" href="#">Learn More</button>
+            </div>
+        </div>
+        <div id="marketWidget">
+            <h3>Keep up with the markets</h3>
+            <p>Select a ticker symbol to see the market chart.</p>
+            <p id="widget" ></p>
+            
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_f8eac"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AMEX-VOO/" rel="noopener" target="_blank"><span class="blue-text">VOO</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.MediumWidget(
+    {
+    "symbols": [
+      [
+        "VOO",
+        "AMEX:VOO|1D"
+      ],
+      [
+        "VYM",
+        "AMEX:VYM|12M"
+      ],
+      [
+        "SCHK",
+        "AMEX:SCHK|12M"
+      ],
+      [
+        "QQQ",
+        "NASDAQ:QQQ|12M"
+      ]
+    ],
+    "chartOnly": false,
+    "width": 1000,
+    "height": 400,
+    "locale": "en",
+    "colorTheme": "dark",
+    "gridLineColor": "rgba(240, 243, 250, 0)",
+    "fontColor": "rgba(255, 255, 255, 1)",
+    "isTransparent": false,
+    "autosize": false,
+    "showVolume": false,
+    "scalePosition": "no",
+    "scaleMode": "Normal",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "noTimeScale": false,
+    "valuesTracking": "1",
+    "chartType": "line",
+    "container_id": "tradingview_f8eac"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+        </div>
+        <div id="articleSection">
+        <h3 id="articles">Articles for you</h3>
+        <div class="flexContainer">
+    <div class="linkBlock">
+        <img src="/resources/coins-round.png" alt="coins" class="blogImage">
+        <p class="blogName">How to Learn Basic Board Surfing</p>
+    </div>
+    <div class="linkBlock">
+        <img src="/resources/gold round.png" alt="gold" class="blogImage">
+        <p class="blogName">How to Learn Basic Board Surfing</p>
+    </div>
+    <div class="linkBlock">
+        <img src="/resources/manPhone.png" alt="man checking stocks in phone" class="blogImage">
+        <p class="blogName">How to Learn Basic Board Surfing</p>
+    </div>
+   </div>  
+</div>   
+    <div id="sendMessage">
+        <h3>We love hearing from you, <br>Send us your questions</h3>
+        <button class="lightBlueButton" href="#">Send Message</button>
+    </div>  
+<footer>
+    <div id="bottomLinks">
+        <a href="/index.html" id="bottomHome">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/assetList.html">Asset List</a>
+        <a href="/calculator.html">Calculator</a>
+        <a href="/blog.html">Blog</a>
+    </div>
+    <h3 id="footerTitle">Long-term investment, made easy</h3>
+    <img src="/resources/Logo.svg" alt="logo easy finance" id="footerLogo">
+    <p id="signature">Maria Vasquez &copy; 2022</p>
+</footer>
+   
+</body>
+
+</html>

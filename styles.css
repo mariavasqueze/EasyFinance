@@ -1,0 +1,367 @@
+/* Main */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+p {
+    font-size: 18px;
+    color: white;
+    line-height: 33px;
+    font-weight: 500;
+}
+a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+h1 {
+    font-size: 72px;
+    color: white;
+    max-width: 650px;
+}
+h2 {
+    color: #00517F;
+    font-size: 48px;
+    font-weight: 800;
+}
+h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 20px;
+}
+img {
+    max-width: auto;
+    max-height: 600px;
+    background-size: cover; 
+}
+
+/* Nav bar */
+nav {
+    padding: 30px 90px 30px 30px;
+    text-align: right;
+}
+#logo {
+    position: absolute;
+    top: 45px;
+    left: 120px;
+}
+.lightBlueButton {
+    background-color: #6ECCE5;
+    height: 60px;
+    width: 150px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    margin: 0px;
+}
+
+/* Hero section*/
+header {
+    background-image: url(/resources/Hero.png);
+    background-repeat: no-repeat;
+    min-height: 800px;
+    width: auto;
+}
+#heroSection {
+    margin-top: 0px;
+}
+.description {
+    max-width: 438px;
+    padding-bottom: 40px;
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;   
+    min-height: 520px;
+}
+.leftBox {
+    width: 50%;
+    padding-left: 120px;
+}
+.rightBox {
+    width: 40%;
+    padding-right: 0px;
+}
+#heroImage {
+    padding-top: 60px;
+    padding-left: 10px;
+}
+
+/* We want to show you section */
+#showYou {
+    background-color: white;
+    margin-top: 60px;
+    padding: 100px 0px;
+}
+#top3 {
+    max-height: 490px;
+    width: auto;
+}
+#checkingPhone {
+    padding-top: 40px;
+}
+
+/* 3rd section */
+#pWhiteBack {
+    color: #181E34;
+}
+#allocation {
+    padding: 60px 0px;
+}
+
+/* Widget section */
+#marketWidget {
+    text-align: center;
+    background-color: #00517F;
+    padding: 100px 0px;
+}
+
+/* Articles section */
+#articleSection {
+   margin: 0px 140px;
+   padding: 40px 0px;
+}
+#articles {
+    color: #68686A;  
+    padding-left: 10px;
+}
+.blogName {
+    color: #68686A;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.blogImage {
+    max-width: 360px;
+    height: auto;
+    border-radius: 10px;
+    padding: 0px 8px;
+}
+/* Send message section */
+#sendMessage {
+    margin: 80px 120px;
+    text-align: center;
+    background-image: url(/resources/message.png);
+    background-repeat: no-repeat;
+    width: auto;
+
+    padding: 100px 260px;
+}
+
+/* Footer */
+footer {
+    background-color: #181E34;
+    padding: 100px 120px;
+    text-align: left;
+}
+#footerTitle {
+    max-width: 600px;
+}
+#footerLogo {
+    width: 300px;
+    height: auto;
+}
+#signature {
+    padding-top: 30px;
+    font-size: 15px;
+}
+#bottomHome{
+    padding-left: 0px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    body {
+        margin: 0px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .rightBox {
+        width: 100%;
+        padding-left: 100px;
+     }
+     .leftBox {
+         width: 80%;
+     }
+}
+
+@media (max-width: 992px) {
+    body {
+        margin: 0px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    header {
+        padding-bottom: 60px;
+    }
+    .link {
+        display: none;
+    }
+    .rightBox {
+        width: 100%;
+        padding-left: 100px;
+     }
+     .leftBox {
+         width: 80%;
+     }
+     #showYou {
+         padding-top: 10px; 
+         padding-bottom: 60px;   
+     }
+     #allocation {
+         padding-bottom: 80px;
+     }
+     #checkingPhone {
+         display: none;
+     }
+     #chart {
+         padding: 10px;
+     }
+     .linkBlock {
+         padding-top: 20px;
+     }
+     #sendMessage {
+        background-image: url(/resources/smallMessage.png);
+        padding: 40px 80px;
+        margin: 60px 80px 60px 90px;
+     }
+     #bottomLinks a {
+         font-size: 15px;
+     }
+     footer {
+        padding: 60px 120px;
+     } 
+  }
+
+  /* About Page */
+
+
+  /* Asset List Page */
+
+  /* Calculator Page*/
+  #calculatorPage {
+    text-align: center;
+    margin-top: 80px;
+  }
+  form {
+    background: #00517F;
+    margin: 80px 140px 300px 140px;
+    border-radius: 40px;
+    padding: 80px;
+  }
+  label {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+  }
+  .formTextBundle {
+    max-width: 400px;
+  }
+  .formDescription {
+    color: rgba(110, 204, 229, 1);
+    font-size: 16px;
+    font-weight: 600;
+  }
+.numberInput {
+    float: right;
+    position: relative;
+    top: -80px;
+    height: 35px;
+    width: 220px;
+}
+#buttons {
+    text-align: center;
+    padding: 40px;
+}
+.button {
+    text-decoration: none;
+    font-size: 18px;
+    color: #6ECCE5;
+    padding: 15px 40px;
+    border: 3px solid #6ECCE5;
+    position: relative;
+}
+.button::before, .button::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+}
+.button::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+.button::after {
+    bottom: -15px;
+    left: -15px;
+    border-width: 0 3px 3px 0;
+}
+.button:hover::before, .button:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+#calculate {
+    margin-right: 30px;
+    color: rgba(224, 109, 16, 1);
+    border: 3px solid rgba(224, 109, 16, 1);
+}
+#reset {
+    margin-left: 10px;
+}
+#answer {
+    color: #00517F;
+}
+  /* Blog Page */
+  #navOther {
+      background-color: #00517F;
+  }
+  #blogTitle {
+      text-align: center;
+      font-size: 64px;
+      font-weight: 700;
+      color: #68686A;
+  }
+  #blogFlex {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .blogBlock {
+      height: 544px;
+      width: 432px;
+      margin: 60px 10px 60px 60px ;
+      border: 2px solid rgba(109, 109, 109, .55);
+      box-shadow: 2px 3px 6px rgba(109, 109, 109, 0.8);
+  }
+  .blogCover {
+      height: 280px;
+      width: 432px;
+  }
+  h5 {
+     font-size: 18px;
+     font-weight: 700; 
+     margin: 40px 25px 0px 25px;
+  }
+  .blogDescription {
+      color: #6D6D6D;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 10px 25px;
+  }
+  .author, .dateWritten {
+      display: inline;
+      color: rgba(109, 109, 109, 0.55);
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0px 25px;
+  }

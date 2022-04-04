@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="rel" href="/resources/favicon1.png" type="image/x-icon">
+</head>
+<body>
+    <div id="navOther">
+        <nav>
+            <a href="/index.html"><img src="/resources/Logo.svg" alt="Easy finance logo" id="logo"></a>
+            <a href="/about.html" class="link">About</a>
+            <a href="/assetList.html" class="link">Asset List</a>
+            <a href="/calculator.html" class="link">Calculator</a>
+            <a href="/blog.html" class="link">Blog</a>
+            <button class="lightBlueButton">Contact Us</button>
+        </nav>
+    </div>
+    <main>
+         <h2 id="calculatorPage">Compund Interest Calculator</h2>
+         <form action="get">
+             <div class="formTextBundle">
+             <label for="initial">Intitial Investment</label>
+             <p class="formDescription">Money available for first investment</p>
+            </div>
+            <input type="number" name="initial" class="numberInput" id="initial">
+            <div class="formTextBundle">
+             <label for="monthly">Monthly Contribution</label>
+             <p class="formDescription">Money that will be added every month</p>
+            </div>
+            <input type="number" name="monthly" class="numberInput" id="monthly">
+            <div class="formTextBundle">
+            <label for="length">Length of Time in Years</label>
+            <p class="formDescription">The number of years you plan to save</p>
+            </div>
+            <input type="number" name="length" class="numberInput" id="length">
+            <div class="formTextBundle">
+            <label for="rate">Estimated Interest Rate</label>
+            <p class="formDescription">Estimated annual interest rate</p>
+            </div>
+            <input type="number" name="rate" class="numberInput" id="rate">
+            <div class="formTextBundle">
+            <label for="frequency">Compund Frequency</label>
+            <p class="formDescription">Timer per year interest will be compunded</p>
+            </div>
+            <input type="number" name="frequency" class="numberInput" id="frequency">
+            <br>
+            <div id="buttons">
+            <a href="#" class="button" id="calculate" onclick="calculate();">Calculate</a>
+            <a href="#" class="button" id="reset" onclick="reset();">Reset</a>
+        </div>
+         </form>
+         <p id="answer"></p>
+    </main>
+    <footer>
+        <div id="bottomLinks">
+            <a href="/index.html" id="bottomHome">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/assetList.html">Asset List</a>
+            <a href="/calculator.html">Calculator</a>
+            <a href="/blog.html">Blog</a>
+        </div>
+        <h3 id="footerTitle">Long-term investment, made easy</h3>
+        <img src="/resources/Logo.svg" alt="logo easy finance" id="footerLogo">
+        <p id="signature">Maria Vasquez &copy; 2022</p>
+    </footer>
+</body>
+</html>
