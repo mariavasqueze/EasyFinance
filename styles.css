@@ -241,12 +241,24 @@ footer {
      } 
   }
 
-  /* About Page */
+/* About Page */
+#investingPageRap {
+    background-color: #00517F;
+    margin: 0px;
+}
+#investingTitle {
+    text-align: center;
+    color: white;
+}
+iframe {
+    border-radius: 10px;
+}
 
 
-  /* Asset List Page */
 
-  /* Calculator Page*/
+/* Asset List Page */
+
+/* Calculator Page*/
   #calculatorPage {
     text-align: center;
     margin-top: 80px;
