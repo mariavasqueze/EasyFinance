@@ -34,8 +34,7 @@ h3 {
     padding-bottom: 20px;
 }
 img {
-    max-width: auto;
-    max-height: 600px;
+    display: flex;
     background-size: cover; 
 }
 
@@ -44,13 +43,19 @@ nav {
     padding: 30px 90px 30px 30px;
     text-align: right;
 }
+.link:hover{
+    color: #181E34;
+    transition: all 0.3s ease-in-out;
+}
 #logo {
     position: absolute;
     top: 45px;
     left: 120px;
 }
+#logo:hover {
+    cursor: pointer;
+}
 .lightBlueButton {
-    background-color: #6ECCE5;
     height: 60px;
     width: 150px;
     color: white;
@@ -59,14 +64,21 @@ nav {
     border-radius: 10px;
     border: none;
     margin: 0px;
+    background-color: #6ECCE5;
+    background: linear-gradient(to left, #6ECCE5 50%, #181E34 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: all .5s ease-in-out;
+}
+.lightBlueButton:hover{
+    background-position: left;
+    color: #FEEDEB;
 }
 
 /* Hero section*/
 header {
-    background-image: url(/resources/Hero.png);
-    background-repeat: no-repeat;
-    min-height: 800px;
-    width: auto;
+    background-image: linear-gradient(118.33deg, rgba(110, 204, 229, 1) -60.94%, rgba(0, 81, 127, 1) 62.06%);
+    padding-bottom: 20px;  
 }
 #heroSection {
     margin-top: 0px;
@@ -77,20 +89,24 @@ header {
 }
 .flexContainer {
     display: flex;
-    flex-wrap: wrap;   
-    min-height: 520px;
+    flex: 1 1;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 60px; 
+    margin: 40px 20px;  
+    justify-content: center;
+    align-items: center;
 }
 .leftBox {
     width: 50%;
-    padding-left: 120px;
 }
 .rightBox {
-    width: 40%;
-    padding-right: 0px;
+    width: 40%;;
 }
 #heroImage {
-    padding-top: 60px;
-    padding-left: 10px;
+    display: flex;
+    flex: 1 2;
+    margin-top: 20px; 
 }
 
 /* We want to show you section */
@@ -111,9 +127,12 @@ header {
 #pWhiteBack {
     color: #181E34;
 }
-#allocation {
-    padding: 60px 0px;
+#percentagesChart{
+    position: relative;
+    left: -110px;
+    padding-top: 80px;
 }
+
 
 /* Widget section */
 #marketWidget {
@@ -130,6 +149,7 @@ header {
 #articles {
     color: #68686A;  
     padding-left: 10px;
+    text-align: center;
 }
 .blogName {
     color: #68686A;
@@ -147,10 +167,8 @@ header {
 #sendMessage {
     margin: 80px 120px;
     text-align: center;
-    background-image: url(/resources/message.png);
-    background-repeat: no-repeat;
-    width: auto;
-
+    background: linear-gradient(118.33deg, rgba(0, 81, 127, 1) -60.94%, rgba(19, 94, 136, 0.8) 76.37%);
+    border-radius: 10px;
     padding: 100px 260px;
 }
 
@@ -167,12 +185,19 @@ footer {
     width: 300px;
     height: auto;
 }
+#footerLogo:hover {
+    cursor: pointer;
+}
 #signature {
     padding-top: 30px;
     font-size: 15px;
 }
 #bottomHome{
     padding-left: 0px;
+}
+.bottomLink:hover{
+    color: #6ECCE5;
+    transition: all 0.3s ease-in-out;
 }
 
 /* About Page */
@@ -318,29 +343,87 @@ iframe {
 
 /* Responsiveness */
 @media (max-width: 480px) { 
+    html,
     body {
         margin: 0px;
+        width: 100%;
+        /* overflow-x:hidden; */
+    }
+    nav {
+        padding: 30px 30px;
+    }
+    #logo {
+        left: 20px;
     }
     h1 {
         font-size: 60px;
     }
+    h3 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    img{
+        max-width: 300px;
+        height: auto;
+        align-items: left;
+    }
+    #heroSection {
+        max-width: 400px;
+    }
+    #showYou {
+        max-width: 400px;
+    }
+    .flexContainer{
+        min-height: none;
+        justify-content: center;
+    }
     .rightBox {
-        width: 100%;
-        padding-left: 100px;
+        width: 0%;
+        justify-content: center;
+        padding: 0px;
+
      }
      .leftBox {
-         width: 80%;
+         width: 0%;
+         justify-content: center;
+         padding: 0px;
      }
+     #heroImage {
+         padding: 0px;
+         margin-top: 60px;
+     }
+     #sendMessage {
+        margin: 80px 40px;
+        text-align: center;
+     }
+     #widgetChart{
+         visibility: hidden;
+         max-height: 150px;
+     }
+     #allocationTitle {
+         max-width: 400px;
+     }
+     /* #percentagesChart{
+         min-width: 350px;
+     } */
+     
+     /* change the above 2 if i can make the widget work in different screen sizes */
 }
 
 @media (max-width: 768px){
-
+    #widgetChart{
+        visibility: hidden;
+        max-height: 150px;
+    }
 }
 
 
 @media (max-width: 1024px) {
     body {
         margin: 0px;
+        width: 100%;
     }
     h1 {
         font-size: 60px;
@@ -352,8 +435,8 @@ iframe {
         display: none;
     }
     .rightBox {
-        width: 100%;
-        padding-left: 100px;
+        width: 800%;
+        padding-left: 60px;
      }
      .leftBox {
          width: 80%;
@@ -371,13 +454,11 @@ iframe {
      #chart {
          padding: 10px;
      }
+     #allocationRight {
+         max-width: 90%;
+     }
      .linkBlock {
          padding-top: 20px;
-     }
-     #sendMessage {
-        background-image: url(/resources/smallMessage.png);
-        padding: 40px 80px;
-        margin: 60px 80px 60px 90px;
      }
      #bottomLinks a {
          font-size: 15px;
@@ -385,9 +466,14 @@ iframe {
      footer {
         padding: 60px 120px;
      } 
+     #widgetChart{
+        visibility: hidden;
+        max-height: 150px;
+    }
   }
 
-  @media (max-width: 1200px){ //or 1280??? 480px, 768px, 1024px, and 1280px).
+  @media (max-width: 1200px){ 
+      /* //480px, 768px, 1024px, and 1280px). */
 
   }
 

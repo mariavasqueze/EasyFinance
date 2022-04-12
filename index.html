@@ -36,7 +36,7 @@
                 <img src="/resources/manPhone.png" alt="person checing stocks on phone" id="checkingPhone">
             </div>
             <div class="rightBox">
-                <h2>We want to show you</h2>
+                <h2 id="showYouTitle">We want to show you</h2>
                 <img src="/resources/top3.png" alt="top 3 descriptions" id="top3">
             </div>
         </div>
@@ -44,8 +44,8 @@
             <div class="leftBox" id="chart">
                 <img src="/resources/mientrasTanto.png" alt="percentagesChart" id="percentagesChart">
             </div>
-            <div class="rightBox">
-                <h2>Recommended allocation of assets:</h2>
+            <div class="rightBox" id="allocationRight">
+                <h2 id="allocationTitle">Recommended allocation of assets:</h2>
                 <p  class="description" id="pWhiteBack">Investors recommend to invest a percentage in different types of ETFs and Index fund based on the type of companies they are composed of to minimize risk and increase resturns</p>
                 <button class="lightBlueButton" href="#">Learn More</button>
             </div>
@@ -56,6 +56,7 @@
             <p id="widget" ></p>
             
             <!-- TradingView Widget BEGIN -->
+            <div id="widgetChart">
 <div class="tradingview-widget-container">
     <div id="tradingview_f8eac"></div>
     <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AMEX-VOO/" rel="noopener" target="_blank"><span class="blue-text">VOO</span></a> by TradingView</div>
@@ -82,6 +83,7 @@
       ]
     ],
     "chartOnly": false,
+
     "width": 1000,
     "height": 400,
     "locale": "en",
@@ -89,7 +91,7 @@
     "gridLineColor": "rgba(240, 243, 250, 0)",
     "fontColor": "rgba(255, 255, 255, 1)",
     "isTransparent": false,
-    "autosize": false,
+    "autosize": true,
     "showVolume": false,
     "scalePosition": "no",
     "scaleMode": "Normal",
@@ -102,12 +104,13 @@
     );
     </script>
   </div>
+</div>
   <!-- TradingView Widget END -->
 
         </div>
         <div id="articleSection">
         <h3 id="articles">Articles for you</h3>
-        <div class="flexContainer">
+        <div class="flexContainer" id="articles">
     <div class="linkBlock">
         <img src="/resources/coins-round.png" alt="coins" class="blogImage">
         <p class="blogName">How to Learn Basic Board Surfing</p>
@@ -128,11 +131,11 @@
     </div>  
 <footer>
     <div id="bottomLinks">
-        <a href="/index.html" id="bottomHome">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/assetList.html">Asset List</a>
-        <a href="/calculator.html">Calculator</a>
-        <a href="/blog.html">Blog</a>
+        <a href="/index.html" class="bottomLink" id="bottomHome">Home</a>
+        <a href="/about.html" class="bottomLink">About</a>
+        <a href="/assetList.html" class="bottomLink">Asset List</a>
+        <a href="/calculator.html" class="bottomLink">Calculator</a>
+        <a href="/blog.html" class="bottomLink">Blog</a>
     </div>
     <h3 id="footerTitle">Long-term investment, made easy</h3>
     <img src="/resources/Logo.svg" alt="logo easy finance" id="footerLogo">
