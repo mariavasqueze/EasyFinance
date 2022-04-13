@@ -80,9 +80,6 @@ header {
     background-image: linear-gradient(118.33deg, rgba(110, 204, 229, 1) -60.94%, rgba(0, 81, 127, 1) 62.06%);
     padding-bottom: 20px;  
 }
-#heroSection {
-    margin-top: 0px;
-}
 .description {
     max-width: 438px;
     padding-bottom: 40px;
@@ -93,7 +90,7 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     padding: 0px 60px; 
-    margin: 40px 20px;  
+    margin: 40px 60px;  
     justify-content: center;
     align-items: center;
 }
@@ -101,7 +98,8 @@ header {
     width: 50%;
 }
 .rightBox {
-    width: 40%;;
+    width: 40%;
+    justify-content: right;
 }
 #heroImage {
     display: flex;
@@ -167,7 +165,7 @@ header {
 #sendMessage {
     margin: 80px 120px;
     text-align: center;
-    background: linear-gradient(118.33deg, rgba(0, 81, 127, 1) -60.94%, rgba(19, 94, 136, 0.8) 76.37%);
+    background: linear-gradient(118.33deg, rgba(110, 204, 229, 1) -60.94%, rgba(0, 81, 127, 1) 62.06%);
     border-radius: 10px;
     padding: 100px 260px;
 }
@@ -214,6 +212,60 @@ iframe {
 }
 
 /* Asset List Page */
+#assetsTopSection {
+    background-color: rgba(39, 108, 147, 1);
+    color: white;
+    margin: 0;
+    padding: 100px 180px 180px 160px;
+    max-width: 600px;
+    max-height: 400px;
+}
+#assetsTitle {
+    color: #FFF;
+}
+select {
+    min-width: 200px;
+    float: left;
+    padding: 10px;
+    margin: 40px 0px;
+}
+#filter {
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.assetBlock{
+    min-width: 300px;
+    max-width: 390px;
+    max-height: 300px;
+    background-color: rgba(39, 108, 147, 1);
+    border-radius: 20px;
+    margin: 40px 20px 20px 20px;
+    padding: 40px 60px;
+    color: white;
+}
+.assetBlockTitle {
+    margin: 40px 25px 0px 0px;
+}
+.assetType {
+    width: 100px;
+}
+.detailsButton {
+    margin: 0px;
+    background-color: #181E34;
+    border-radius: 10px;
+    width: 124px;
+    height: 50px;
+    text-align: center;
+}
+.typeFigure {
+    margin-bottom: 5px;
+}
+.inlineFlex {
+    display: inline-flex;
+    margin: 40px 0px;
+}
 
 /* Calculator Page*/
   #calculatorPage {
@@ -222,7 +274,7 @@ iframe {
   }
   form {
     background: #00517F;
-    margin: 80px 140px 80px 180px;
+    margin: 0 auto; 
     border-radius: 40px;
     padding: 80px;
     max-width: 900px;
@@ -246,6 +298,7 @@ iframe {
     top: -80px;
     height: 35px;
     min-width: 280px;
+    font-size: 20px;
 }
 #buttons {
     text-align: center;
@@ -312,15 +365,15 @@ iframe {
   }
   .blogBlock {
       height: 544px;
-      width: 432px;
+      max-width: 432px;
       margin: 60px 10px 60px 30px;
       border: 2px solid rgba(109, 109, 109, .55);
       box-shadow: 2px 3px 6px rgba(109, 109, 109, 0.8);
-      padding: 0px 20px;
+      padding: 0px;
   }
   .blogCover {
       height: 280px;
-      width: 432px;
+      width: auto;
   }
   h5 {
      font-size: 18px;
@@ -371,9 +424,17 @@ iframe {
     }
     #heroSection {
         max-width: 400px;
+        margin-left: 10px;
     }
+     #checkingPhone {
+         display: none;
+     }
+     #allocationRight {
+        margin-left: 10px;
+     }
     #showYou {
         max-width: 400px;
+        margin-left: 0px;
     }
     .flexContainer{
         min-height: none;
@@ -410,6 +471,29 @@ iframe {
      } */
      
      /* change the above 2 if i can make the widget work in different screen sizes */
+     .numberInput {
+        margin-top: 100px;
+        min-width: 150px;
+    }
+    .button::before, .button::after {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        transition: all .5s;
+    }
+    .button::before {
+        display: none;
+    }
+    .button::after {
+        display: none;
+    }
+    #reset {
+        margin: 200px 0px;
+    }
+    #answer {
+        text-align: center;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 768px){
@@ -434,16 +518,22 @@ iframe {
     .link {
         display: none;
     }
+    .flexContainer {
+        justify-content: center;
+        margin: 20px 60px;
+    }
     .rightBox {
-        width: 800%;
-        padding-left: 60px;
+        width: 100%;
+        padding-left: 10px;
      }
      .leftBox {
-         width: 80%;
+         width: 100%;
      }
-     #showYou {
-         padding-top: 10px; 
-         padding-bottom: 60px;   
+     #heroSection {
+        padding: 10px 0px 60px 60px;
+    }
+     #showYou { 
+         padding: 10px 0px 60px 80px;
      }
      #allocation {
          padding-bottom: 80px;
@@ -452,14 +542,20 @@ iframe {
          display: none;
      }
      #chart {
-         padding: 10px;
+        padding: 10px 0px 60px 100px;
      }
      #allocationRight {
+        padding: 10px 0px 60px 60px;
+     }
+     #allocationTitle {
          max-width: 90%;
      }
      .linkBlock {
          padding-top: 20px;
      }
+     #sendMessage {
+        padding: 100px 120px;
+    }
      #bottomLinks a {
          font-size: 15px;
      }
@@ -474,9 +570,19 @@ iframe {
 
   @media (max-width: 1200px){ 
       /* //480px, 768px, 1024px, and 1280px). */
-
+      
   }
 
-  @media (min-width: 1201px){
-
+  @media (min-width: 1440px){
+    .leftBox {
+        width: 50%;
+        padding-left: 100px;
+    }
+    .flexContainer {
+        gap: 0px;
+        padding-bottom: 60px;
+    }
+    form {
+        margin: 0 auto; 
+    }
   }
