@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>About</title>
     <script src="/script.js" defer></script>
     <link rel="stylesheet" href="/styles.css">
-    <link rel="rel" href="/resources/favicon1.png" type="image/x-icon">
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="navOther">
@@ -17,41 +17,45 @@
             <a href="/assetList.html" class="link">Asset List</a>
             <a href="/calculator.html" class="link">Calculator</a>
             <a href="/blog.html" class="link">Blog</a>
-            <button class="lightBlueButton">Contact Us</button>
+            <a href="mailto:mariadelmarvze@gmail.com" target="_blank" class="aButton"><button class="lightBlueButton">Contact Us</button></a>
         </nav>
     </div>
     <main id="investingPageRap">
+        <h2 id="investingTitle">What is Investing</h2> 
         <div id="videoSection">
-            <h2 id="investingTitle">What is Investing</h2> 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Sbp_t4guM8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div >
-            <h3>What are ETFs and Index Funds?</h3>
-            <div class="choiceBlock" onclick="">
-                <img src="/resources/gold round.png" alt="gold bars">
-                <h4>ETF</h4>
+        <div id="optionSection">
+            <h3 id="indexTitle">What are ETFs and Index Funds?</h3>
+            <div class="choiceBlocks">
+            <div class="choiceBlocks" id="etfBlock" onclick="showEtf();">
+                <img class="blockImage" src="/resources/gold round.png" alt="gold bars">
+                <h4 class="blockDescription">ETF</h4>
             </div>
-            <div class="choiceBlock" onclick="">
-                <img src="/resources/coins-round.png" alt="coins and dollar bills">
-                <h4>Index Fund</h4>
+            <div class="choiceBlocks" id="indexFundBlock" onclick="showIndex();" >
+                <img class="blockImage" src="/resources/coins-round.png" alt="coins and dollar bills">
+                <h4 class="blockDescription">Index Fund</h4>
             </div>
+            </div>
+        </div>
 
         </div>
       
-        <div class="flexContainer" id="appearsOnClickSection">
+        <div class="flexContainer" id="appearsEtf">
             <div class="leftBox">
                 <img src="/resources/gold round.png" alt="gold bars">
             </div>
             <div class="rightBox">
                 <h3>ETF</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid possimus esse quasi doloribus libero eum omnis quos ut praesentium quaerat</p>
+                <p>ETFs or Exchange Traded Fund is like a basket of individual stocks or government and corporate bonds. For example, if you want to invest in tech companies you don’t need to buy one stock of Microsoft for around $300, another of Meta for $200, etc. but you can buy $200 of a basket that has all of these stocks</p>
                 <div class="inlineFlexBox">
                     <div class="descriptionbox">
-                        <h4>8%</h4>
-                        <p>Average Annueal return</p>
+                        <h4>7% - 9%</h4>
+                        <p>Average annual return</p>
                     </div>
                     <div class="descriptionbox">
-                        <h4>20</h4>
+                        <h4>10 - 20</h4>
                         <p>Years average investment time</p>
                     </div>
                     <div class="descriptionbox">
@@ -60,38 +64,39 @@
                     </div>
                 </div>
             </div>
-            <button class="lightBlueButton">Search ETFs</button>
+            <a href="/assetList.html" target="_blank"><button class="lightBlueButton">Search ETFs</button></a>
         </div>
 
-        <div class="flexContainer" id="appearsOnClickSection">
+        <div class="flexContainer" id="appearsIndex">
             <div class="leftBox">
                 <h3>Index Fund</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid possimus esse quasi doloribus libero eum omnis quos ut praesentium quaerat</p>
+                <p>Index Funds are exchange traded funds that mirror a particular market. An Index Fund has fees of arround 0.05% and while it is not actively traded by anyone, as it follows a market it can have the same or higher returns than the equivalent mutual fund.</p>
                 <div class="inlineFlexBox">
                     <div class="descriptionbox">
-                        <h4>8%</h4>
+                        <h4>7% - 9%</h4>
                         <p>Average Annueal return</p>
                     </div>
                     <div class="descriptionbox">
-                        <h4>20</h4>
+                        <h4>10 - 20 </h4>
                         <p>Years average investment time</p>
                     </div>
                     <div class="descriptionbox">
-                        <h4>$0</h4>
+                        <h4>$3,000</h4>
                         <p>Min amount to start</p>
                     </div>
                 </div>
             </div>
             <div class="rightBox">
-                <img src="/resources/gold round.png" alt="gold bars">
+                <img src="/resources/coins-round.png" alt="gold bars">
             </div>
-            <button class="lightBlueButton">Search Index Funds</button>
+            <a href="/assetList.html" target="_blank"><button class="lightBlueButton">Search Index Funds</button></a>
         </div>
-
+        <div id="lastSection">
         <div id="sendMessage">
             <h3>We love hearing from you, <br>Send us your questions</h3>
-            <button class="lightBlueButton" href="#">Send Message</button>
+            <a href="mailto:mariadelmarvze@gmail.com" target="_blank" class="aButton"><button class="lightBlueButton">Send Message</button></a>
         </div> 
+    </div>
     </main>
     
     <footer>

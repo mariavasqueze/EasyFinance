@@ -67,3 +67,17 @@ function reset(){
     document.getElementById("answer").innerHTML = "";
 }
 
+
+let showEtf = () => {
+    document.getElementById("appearsEtf").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+let showIndex = () => {
+    document.getElementById("appearsIndex").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+
